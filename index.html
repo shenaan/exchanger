@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="css/grids-responsive-min.css">
         <!--<![endif]-->
         <link rel="stylesheet" href="css/pure-min.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/jquery.formstyler.css">
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -72,10 +74,44 @@
                     <span></span><span></span><span></span>
                 </a>
             </div>
-            <!--<span class="icon-home_bg_top"></span>-->
         </header>
 
+        <main class="main">
+            <div class="exchange container-exchange">
+                <div class="exchange-sliders clearfix">
+                    <div class="exchange-give">
+                        <label for="give-amount">Отдадите:</label>
+                        <input type="text" id="give-amount" placeholder="17599">
+                        <select class="give-options">
+                            <option value="btc"><span class="cc-BTC"></span>BTC</option>
+                            <option value="btc"><span class="cc-BTC"></span>BTC</option>
+                            <option value="btc"><span class="cc-BTC"></span>BTC</option>
+                        </select>
+                        <div id="give-slider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-animation">
+                <span class="floating triangle-small"></span>
+                <span class="floating hexagon-small1"></span>
+                <span class="floating hexagon-medium1"></span>
+                <span class="floating hexagon-medium2"></span>
+                <span class="floating triangle-medium1"></span>
+                <span class="floating hexagon-big"><span class="cc-ETH"></span></span>
+                <span class="floating hexagon-medium4"><span class="cc-ETH"></span></span>
+                <span class="floating hexagon-medium5"><span class="cc-BTC-alt"></span></span>
+                <span class="floating hexagon-medium6"><span class="cc-BTC-alt"></span></span>
+                <span class="floating triangle-small1"><span class="cc-ZEC"></span></span>
+
+
+
+            </div>
+        </main>
+
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/jquery-ui.min.js"></script>
+        <script src="js/vendor/jquery.formstyler.js"></script>
 
         <script src="js/main.js"></script>
     </body>
