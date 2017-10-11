@@ -18,15 +18,15 @@ $(document).ready(function () {
    //range slider
 
     $( "#give-slider" ).slider({
-        range: false,
+        // range: false,
         min: 0,
         max: 50000,
-        values: [17599],
+        value: 17599,
         slide: function( event, ui ) {
-            $( "#give-amount" ).val( ui.values[ 0 ]);
+            $( "#give-amount" ).val( ui.value);
         }
     });
-    $( "#give-amount" ).val( $( "#give-range" ).slider( "values", 0 ));
+    // $( "#give-amount" ).val( $( "#give-range" ).slider( "option","value", 17599));
 
 
     $('.give-options').styler();

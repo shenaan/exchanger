@@ -23,6 +23,8 @@
   border: none;
   .box-shadow(0px 3px 30px 0px rgba(41, 109, 183, 0.84));
   margin-bottom: 20px;
+  color:#1e4b76;
+  font-size: 20px;
 }
 
 #give-amount::-webkit-input-placeholder {
@@ -63,4 +65,37 @@
   padding: 10px 20px;
   .border-radius(5px);
   margin-left: 10px;
+  width: 35%;
+  &:before{
+    position: absolute;
+    left:0;
+    //top: 0;
+    //bottom: 0;
+    //margin: auto;
+  }
+  select{
+    visibility: hidden;
+  }
+}
+
+.jq-selectbox__dropdown{
+  width: 100%;
+  left: 0;
+  ul{
+    padding-left: 0;
+  }
+}
+
+.jq-selectbox__select-text{
+  display: inline-block;
+}
+
+.jq-selectbox__trigger{
+  display: inline-block;
+  &:after{
+    content: "\e900";
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+  }
 }

@@ -838,7 +838,6 @@ img {
 }
 .icon-arrow_down:before {
   content: "\e900";
-  color: #000;
 }
 .icon-excahange:before {
   content: "\e901";
@@ -851,23 +850,18 @@ img {
 }
 .icon-home_bg_buttom:before {
   content: "\e904";
-  color: #0453db;
 }
 .icon-home_bg_shape_1:before {
   content: "\e905";
-  color: #12abff;
 }
 .icon-home_bg_shape_2:before {
   content: "\e906";
-  color: #12abff;
 }
 .icon-home_bg_shape_3:before {
   content: "\e907";
-  color: #12abff;
 }
 .icon-home_bg_top:before {
   content: "\e908";
-  color: #0453db;
 }
 .icon-home_feat_1:before {
   content: "\e909";
@@ -975,7 +969,7 @@ img {
 @font-face {
   font-family: "cryptocoins-icons";
   src: url('../fonts/cryptocoins-icons.eot');
-  src: url('../fonts/cryptocoins-icons.eot?#iefix') format('eot'), url('../fonts/cryptocoins-icons.woff2') format('woff2'), url('../fonts/cryptocoins-icons.woff') format('woff'), url('../fonts/cryptocoins-icons.ttf') format('truetype'), url('../fonts//cryptocoins-icons.svg#cryptocoins-icons') format('svg');
+  src: url('../fonts/cryptocoins-icons.eot?#iefix') format('eot'), url('../fonts/cryptocoins-icons.woff') format('woff'), url('../fonts/cryptocoins-icons.ttf') format('truetype'), url('../fonts//cryptocoins-icons.svg#cryptocoins-icons') format('svg');
 }
 @font-face {
   font-family: 'icomoon';
@@ -1194,6 +1188,8 @@ body {
   -webkit-box-shadow: 0px 3px 30px 0px rgba(41, 109, 183, 0.84);
   box-shadow: 0px 3px 30px 0px rgba(41, 109, 183, 0.84);
   margin-bottom: 20px;
+  color: #1e4b76;
+  font-size: 20px;
 }
 #give-amount::-webkit-input-placeholder {
   color: #1e4b76;
@@ -1231,6 +1227,33 @@ body {
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin-left: 10px;
+  width: 35%;
+}
+.jq-selectbox:before {
+  position: absolute;
+  left: 0;
+}
+.jq-selectbox select {
+  visibility: hidden;
+}
+.jq-selectbox__dropdown {
+  width: 100%;
+  left: 0;
+}
+.jq-selectbox__dropdown ul {
+  padding-left: 0;
+}
+.jq-selectbox__select-text {
+  display: inline-block;
+}
+.jq-selectbox__trigger {
+  display: inline-block;
+}
+.jq-selectbox__trigger:after {
+  content: "\e900";
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
 }
 .bg-animation {
   position: relative;
@@ -1300,9 +1323,12 @@ body {
 }
 .floating.hexagon-big .cc-ETH {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 75px;
   color: #0575ff;
 }
@@ -1317,11 +1343,12 @@ body {
 }
 .floating.hexagon-medium4 .cc-ETH {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 75px;
   color: #0575ff;
 }
@@ -1336,11 +1363,12 @@ body {
 }
 .floating.hexagon-medium5 .cc-BTC-alt {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 45px;
   color: #0575ff;
 }
@@ -1355,11 +1383,12 @@ body {
 }
 .floating.hexagon-medium6 .cc-BTC-alt {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 45px;
   color: #0575ff;
 }
@@ -1374,12 +1403,13 @@ body {
 }
 .floating.triangle-small1 .cc-ZEC {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 23px;
   color: #0575ff;
 }
 @keyframes floating {
