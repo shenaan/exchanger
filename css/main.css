@@ -1231,10 +1231,22 @@ body {
 }
 .jq-selectbox:before {
   position: absolute;
-  left: 0;
+  left: 10px;
+  top: 50%;
+  display: inline-block;
+  transform: translateY(-50%);
+  margin-top: -2px;
+  color: aqua;
 }
 .jq-selectbox select {
   visibility: hidden;
+}
+.jq-selectbox li {
+  background-color: white;
+  color: #2428a6;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 .jq-selectbox__dropdown {
   width: 100%;
@@ -1245,15 +1257,19 @@ body {
 }
 .jq-selectbox__select-text {
   display: inline-block;
+  margin-left: 5px;
 }
 .jq-selectbox__trigger {
   display: inline-block;
-}
-.jq-selectbox__trigger:after {
-  content: "\e900";
-  display: inline-block;
-  font-size: 20px;
-  color: #fff;
+  background: url("images/arrow_down.svg") no-repeat center;
+  background-size: contain ;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 .bg-animation {
   position: relative;
