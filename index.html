@@ -25,6 +25,7 @@
         <![endif]-->
     </head>
     <body>
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -50,64 +51,92 @@
                 <!--<a href="#" class="modal__logout"><span class="logout-icon"></span>Выйти</a>-->
             <!--</div>-->
         </div>
+        <!--<div class="bg__top">-->
+            <header id="header">
 
-        <header id="header">
-            <div class="container-header clearfix">
-                <div class="pull-left">
-                    <a href="#" class="header__logo"></a>
+                <div class="container-header clearfix">
+                    <div class="pull-left">
+                        <a href="#" class="header__logo"></a>
+                    </div>
+                    <div class="pull-right">
+                        <nav class="header-nav">
+                            <ul class="header-nav__list">
+                                <li class="header-nav__list-item"><a href="#" class="header-nav__list-link">Обмен</a></li>
+                                <li class="header-nav__list-item"><a href="#" class="header-nav__list-link">Отзывы</a></li>
+                                <li class="header-nav__list-item"><a href="#" class="header-nav__list-link">Помощь</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="header__login-form">
+                            <a href="#" class="header__register">Регистрация</a>
+                            <a href="#" class="header__login"><span class="icon-lock"></span> Вход</a>
+                        </div>
+                    </div>
+                    <a href="#" id="btn-mob">
+                        <span></span><span></span><span></span>
+                    </a>
                 </div>
-                <div class="pull-right">
-                    <nav class="header-nav">
-                        <ul class="header-nav__list">
-                            <li class="header-nav__list-item"><a href="#" class="header-nav__list-link">Обмен</a></li>
-                            <li class="header-nav__list-item"><a href="#" class="header-nav__list-link">Отзывы</a></li>
-                            <li class="header-nav__list-item"><a href="#" class="header-nav__list-link">Помощь</a></li>
-                        </ul>
-                    </nav>
+            </header>
 
-                    <div class="header__login-form">
-                        <a href="#" class="header__register">Регистрация</a>
-                        <a href="#" class="header__login"><span class="icon-lock"></span> Вход</a>
+
+            <main class="main">
+                <div class="exchange container-exchange">
+                    <div class="exchange-sliders clearfix">
+                        <div class="exchange-give">
+                            <label for="give-amount">Отдадите:</label>
+                            <input type="text" id="give-amount" value="17599">
+                            <select class="give-options">
+                                <option selected class="select-icon cc-BTC-alt">BTC</option>
+                                <option class="select-icon cc-ZEC">PTC</option>
+                                <option class="select-icon cc-ZEIT">MTC</option>
+                            </select>
+                            <!--<div class="exchange-item"><span></span></div>-->
+                            <!--<div class="exchange-dropout">-->
+                                <!--<ul class="dropout__list">-->
+                                    <!--<li class="dropout__item"><span class="dropout__icon cc-BTC-alt">BTC</span></li>-->
+                                    <!--<li class="dropout__item"><span class="dropout__icon cc-ZEC"></span>PTC</li>-->
+                                    <!--<li class="dropout__item"><span class="dropout__icon cc-ZEIT">MTC</span></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <div id="give-slider"></div>
+                        </div>
+                        <div class="change-currency">
+                            <a href="#" class="change__btn"></a>
+                        </div>
+                        <div class="exchange-receive">
+                            <label for="receive-amount">Получите:</label>
+                            <input type="text" id="receive-amount" value="352">
+                            <select class="receive-options">
+                                <option class="select-icon cc-BTC-alt">BTC</option>
+                                <option selected class="select-icon cc-ZEC">PTC</option>
+                                <option class="select-icon cc-ZEIT">MTC</option>
+                            </select>
+                            <div id="receive-slider"></div>
+                        </div>
+                        <div class="exchange-action">
+                            <a href="#" class="exchange__btn">Exchange!</a>
+                            <span class="exchange-action__comment">Лучший курс гарантирован! <span>?</span></span>
+                        </div>
                     </div>
                 </div>
-                <a href="#" id="btn-mob">
-                    <span></span><span></span><span></span>
-                </a>
-            </div>
-        </header>
 
-        <main class="main">
-            <div class="exchange container-exchange">
-                <div class="exchange-sliders clearfix">
-                    <div class="exchange-give">
-                        <label for="give-amount">Отдадите:</label>
-                        <input type="text" id="give-amount" value="17599">
-                        <select class="give-options">
-                            <option class="select-icon cc-BTC-alt">BTC</option>
-                            <option selected class="select-icon cc-ZEC">PTC</option>
-                            <option class="select-icon cc-ZEIT">MTC</option>
-                        </select>
-                        <div id="give-slider"></div>
-                    </div>
+                <div class="bg-animation">
+                    <span class="floating triangle-small"></span>
+                    <span class="floating hexagon-small1"></span>
+                    <span class="floating hexagon-medium1"></span>
+                    <span class="floating hexagon-medium2"></span>
+                    <span class="floating triangle-medium1"></span>
+                    <span class="floating hexagon-big"><span class="cc-ETH"></span></span>
+                    <span class="floating hexagon-medium4"><span class="cc-ETH"></span></span>
+                    <span class="floating hexagon-medium5"><span class="cc-BTC-alt"></span></span>
+                    <span class="floating hexagon-medium6"><span class="cc-BTC-alt"></span></span>
+                    <span class="floating triangle-small1"><span class="cc-ZEC"></span></span>
+
+
+
                 </div>
-            </div>
-
-            <div class="bg-animation">
-                <span class="floating triangle-small"></span>
-                <span class="floating hexagon-small1"></span>
-                <span class="floating hexagon-medium1"></span>
-                <span class="floating hexagon-medium2"></span>
-                <span class="floating triangle-medium1"></span>
-                <span class="floating hexagon-big"><span class="cc-ETH"></span></span>
-                <span class="floating hexagon-medium4"><span class="cc-ETH"></span></span>
-                <span class="floating hexagon-medium5"><span class="cc-BTC-alt"></span></span>
-                <span class="floating hexagon-medium6"><span class="cc-BTC-alt"></span></span>
-                <span class="floating triangle-small1"><span class="cc-ZEC"></span></span>
-
-
-
-            </div>
-        </main>
+             </main>
+        <!--</div>-->
 
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/jquery-ui.min.js"></script>

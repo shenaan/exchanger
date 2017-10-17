@@ -26,10 +26,21 @@ $(document).ready(function () {
             $( "#give-amount" ).val( ui.value);
         }
     });
+
+    $( "#receive-slider" ).slider({
+        // range: false,
+        min: 0,
+        max: 50000,
+        value: 352,
+        slide: function( event, ui ) {
+            $( "#receive-amount" ).val( ui.value);
+        }
+    });
     // $( "#give-amount" ).val( $( "#give-range" ).slider( "option","value", 17599));
 
 
     $('.give-options').styler();
+    $('.receive-options').styler();
 
 
 });

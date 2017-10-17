@@ -21,9 +21,9 @@
       </option>
       <option name="outputFromStdout" value="true" />
       <option name="program" value="$USER_HOME$/AppData/Roaming/npm/lessc.cmd" />
-      <option name="scopeName" value="All Places" />
+      <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="false" />
-      <option name="workingDir" value="$FileDir$" />
+      <option name="workingDir" value="$PROJECT_DIR$/less" />
       <envs />
     </TaskOptions>
   </component>

@@ -1,6 +1,8 @@
 #header {
   position: relative;
   padding-top: 40px;
+  overflow-x: hidden;
+  overflow-y: auto;
   .icon-home_bg_top {
     position: absolute;
     top: -749px;
@@ -16,9 +18,22 @@
   position: relative;
 }
 
+.bg__top{
+  //position: absolute;
+  //right: 0;
+  //top: 0;
+  background-image: url("@{rootUrl}home_bg_top.svg");
+  //background-position: 364px -803px;
+  background-position: 50% -70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  .size(100%, 100%);
+}
+
 .header__logo{
   display: inline-block;
-  background: url("@{rootUrl}logo.png") no-repeat center;
+  background: url("@{rootUrl}logo_header.svg") no-repeat center;
   -webkit-background-size: contain;
   background-size: contain;
   .size(144px,36px);
@@ -70,10 +85,16 @@
 
 .header__register{
   border: 1px solid #5090cd;
-  background-color: #0755db;
+  //background-color: #0755db;
   .box-shadow(0px 3px 11px 0px rgba(20, 114, 244, 0.39));
   .border-radius(90px);
-  padding: 12px 33px;
+  padding: 16px 33px;
+  line-height: 1;
+  .transition(0.3s all ease);
+  &:hover{
+    //border: 1px solid #eee;
+    .translate(2px,2px);
+  }
 }
 
 .header__login{
@@ -114,7 +135,7 @@
   }
 
   .header-nav__list-link{
-   font-size: 13px;
+    font-size: 13px;
   }
 
   .header__login-form{
@@ -141,7 +162,7 @@
   #btn-mob{
     display: inline-block;
     position: absolute;
-    top:47px;
+    top: 10px;
     right: 10px;
     z-index: 150;
     span {
@@ -155,8 +176,8 @@
       }
     }
     &.active{
-      top: 25px;
-      right: 10px;
+      top: -8px;
+      right: 18px;
       span {
         background-color: #5d6184;
         &:nth-child(1) {
