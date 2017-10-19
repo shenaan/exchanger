@@ -1,0 +1,253 @@
+.container-exchange{
+  max-width: 1060px;
+  margin-top: 48px;
+}
+
+.exchange-sliders{
+  padding: 0 0 0 12px;
+}
+.exchange-give{
+  display: inline-block;
+  width: 35%;
+  padding-left: 5px;
+  label{
+    display: block;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+}
+
+#give-amount,
+#receive-amount{
+  width: 64%;
+  display: inline-block;
+  padding: 16px 15px;
+  .border-radius(11px);
+  outline: 0;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+#give-amount{
+  color:#1e4b76;
+  .box-shadow(0px 3px 30px 0px rgba(41, 109, 183, 0.84));
+}
+
+#receive-amount{
+  border: 0.5px solid #296de0;
+  .box-shadow(0px 3px 30px 0px rgba(41, 103, 183, 0.84));
+  background-color: transparent;
+  color: #fff;
+}
+
+.ui-slider .ui-slider-range{
+  background-color: blue;
+}
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #ddd;
+  height: 2px;
+  cursor: pointer;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -0.75em;
+  border-radius: 50%;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  .square(20px);
+}
+
+.jq-selectbox{
+  padding: 16px 20px;
+  .border-radius(11px);
+  margin-left: 6px;
+  margin-top: -10px;
+  width: 33%;
+  cursor: pointer;
+  &:before{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    display: inline-block;
+    transform: translateY(-50%);
+    margin-top: -2px;
+  }
+  &.give-options{
+    background-color: #2428a6;
+    &:before{
+      color: #00e9b4;
+    }
+    li{
+      color: #fff ;
+      background-color: #2428a6;
+      &:before{
+        color: #00e9b4;
+      }
+    }
+  }
+  &.receive-options{
+    background-color: #3675e2;
+    .box-shadow(0px 3px 30px 0px rgba(41, 103, 183, 0.84));
+    &:before{
+      color: #fff;
+    }
+    li{
+      color: #dff6ff;
+      background-color: #3675e2;
+      &:before{
+        color: #fff;
+      }
+    }
+  }
+  select{
+    visibility: hidden;
+  }
+  li{
+    .border-radius(0 0 5px 5px);
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    &:before{
+      margin-right: 15px;
+    }
+  }
+}
+
+.jq-selectbox__dropdown{
+  width: 100%;
+  left: 0;
+  ul{
+    padding-left: 0;
+    margin-top: 12px;
+  }
+}
+
+.jq-selectbox__select-text{
+  display: inline-block;
+  margin-left: 30px;
+  letter-spacing: 1.6px;
+  vertical-align: bottom;
+}
+
+.jq-selectbox__trigger{
+  display: inline-block;
+  background: url("@{rootUrl}arrow_down.svg")no-repeat center;
+  background-size: contain ;
+  .square(13px);
+  filter: invert(100%);
+  position: absolute;
+  right: -6px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+//change-btn
+.change-currency{
+  display: inline-block;
+  width: 06%;
+  text-align: center;
+}
+
+.change__btn{
+  display: inline-block;
+  .square(30px);
+  background-color: #3674e4;
+  .border-radius(50%);
+  .rotate(90deg);
+  vertical-align: bottom;
+  &:after{
+    background: url("@{rootUrl}excahange.svg")no-repeat center;
+    -webkit-background-size: cover;
+    background-size: 94%;
+    filter: invert(100%);
+    .square(20px);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+//receive block
+
+.exchange-receive{
+  display: inline-block;
+  width: 35%;
+  padding-left: 5px;
+  label{
+    display: block;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+}
+
+
+//exchange-btn
+.exchange-action{
+  display: inline-block;
+  width: 22%;
+  text-align: center;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.exchange__btn{
+  font-weight: bold;
+  font-size: 17px;
+  color: #172d69;
+  text-decoration: none;
+  background-color: #00e9b4;
+  padding: 16px 69px;
+  .border-radius(90px);
+  display: inline-block;
+  margin-left: 16px;
+  margin-top: 10px;
+  .transition(0.3s all ease);
+  &:hover{
+    background-color: lighten(#00e9b4, 10%);
+  }
+}
+
+.exchange-action__comment{
+  font-size: 12px;
+  color: #8cb3f5;
+  font-weight: 600;
+  display: block;
+  margin-top: 10px;
+  padding-left: 17px;
+    span{
+    display: inline-block;
+    .square(17px);
+    .border-radius(50%);
+    border: 1px solid #8cb3f5;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px){
+  .exchange-give,
+  .exchange-receive{
+    width: 100%;
+  }
+  .change-currency{
+    width: 100%;
+    text-align: left;
+    margin: 20px 0;
+  }
+  .exchange-action{
+    display: none;
+  }
+}
