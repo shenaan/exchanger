@@ -1315,9 +1315,9 @@ body {
   visibility: hidden;
 }
 .jq-selectbox li {
-  -webkit-border-radius: 0 0 5px 5px;
-  -moz-border-radius: 0 0 5px 5px;
-  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1404,7 +1404,7 @@ body {
   display: inline-block;
   width: 22%;
   text-align: center;
-  vertical-align: -webkit-baseline-middle;
+  vertical-align: middle;
 }
 .exchange__btn {
   font-weight: bold;
@@ -1418,7 +1418,7 @@ body {
   border-radius: 90px;
   display: inline-block;
   margin-left: 16px;
-  margin-top: 10px;
+  margin-top: 15px;
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
@@ -1444,6 +1444,48 @@ body {
   border: 1px solid #8cb3f5;
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .exchange-sliders {
+    overflow: hidden;
+    padding: 0 12px;
+  }
+  .exchange-give label {
+    font-size: 18px;
+  }
+  .exchange-receive {
+    margin-bottom: 10px;
+  }
+  .exchange-receive label {
+    font-size: 18px;
+  }
+  #give-amount,
+  #receive-amount {
+    padding: 12px 10px;
+    font-size: 16px;
+  }
+  .jq-selectbox {
+    padding: 12px 0;
+    margin-left: 3px;
+  }
+  .jq-selectbox:before {
+    left: 4px;
+  }
+  .jq-selectbox__trigger {
+    right: 4px;
+  }
+  .change-currency {
+    vertical-align: middle;
+  }
+  .exchange__btn {
+    font-size: 16px;
+    padding: 12px 45px;
+    margin-left: 11px;
+    margin-top: 35px;
+  }
+  .exchange-action {
+    vertical-align: top;
+  }
+}
 @media (max-width: 768px) {
   .exchange-give,
   .exchange-receive {
@@ -1461,12 +1503,14 @@ body {
 .exchange-table {
   margin-top: 35px;
   width: 100%;
+  -webkit-box-shadow: 0px 4px 30px 0px rgba(8, 59, 148, 0.34);
+  box-shadow: 0px 4px 30px 0px rgba(8, 59, 148, 0.34);
 }
 .ex-table__header {
   display: grid;
-  grid-template-columns: 6% 18% 13% 12% 16% 16% 18%;
+  grid-template-columns: 6% 18% 13% 12% 8% 8% 16% 18%;
   grid-template-rows: 53px;
-  grid-template-areas: "grid-header grid-header grid-header grid-header grid-header grid-header grid-header";
+  grid-template-areas: "grid-header grid-header grid-header grid-header grid-header grid-header grid-header grid-header";
   align-items: center;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 5px 5px 0 0;
@@ -1485,16 +1529,46 @@ body {
 }
 .ex-table__body-row {
   display: grid;
-  grid-template-columns: 6% 18% 13% 12% 16% 16% 18%;
+  grid-template-columns: 6% 18% 13% 12% 8% 8% 16% 18%;
   grid-template-rows: 53px;
-  grid-template-areas: "grid-body-cell grid-body-cell grid-body-cell grid-body-cell grid-body-cell grid-body-cell grid-body-cell";
+  grid-template-areas: "grid-body-cell grid-body-cell grid-body-cell grid-body-cell grid-body-cell  grid-body-cell grid-body-cell grid-body-cell";
   align-items: center;
   padding-top: 4px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.ex-table__body-row:hover {
+  background-color: #deff86;
 }
 .ex-table__header-number,
-.ex-table__header-price,
-.ex-table__header-percent {
+.ex-table__header-price {
   justify-self: center;
+}
+.ex-table__header-price {
+  position: relative;
+}
+.ex-table__header-price .arrow__top {
+  position: absolute;
+  top: 4px;
+  right: -12px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 3px 6px 3px;
+  border-color: transparent transparent #ffffff transparent;
+}
+.ex-table__header-price .arrow__bottom {
+  position: absolute;
+  bottom: 4px;
+  right: -12px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 3px 0 3px;
+  border-color: #ffffff transparent transparent transparent;
 }
 .ex-table__header-name {
   padding-left: 7px;
@@ -1504,6 +1578,7 @@ body {
 }
 .ex-table__header-percent {
   padding-left: 20px;
+  text-align: right;
 }
 .ex-table__header-reserved {
   text-align: center;
@@ -1548,7 +1623,7 @@ body {
   padding-left: 18px;
 }
 .ex-table__body-percent {
-  justify-self: center;
+  justify-self: end;
   color: #a53706;
   margin-left: -9px;
 }
@@ -1562,6 +1637,90 @@ body {
 }
 .ex-table__icon {
   margin-right: 26px;
+}
+.table-header__visible-sm,
+.table-body__visible-sm {
+  display: none;
+}
+@media (max-width: 1060px) {
+  .ex-table__body {
+    font-size: 13px;
+  }
+  .ex-table__header {
+    grid-template-columns: 5% 17% 12% 14% 6% 6% 14% 25%;
+  }
+  .ex-table__body-row {
+    grid-template-columns: 5% 17% 12% 14% 6% 6% 14% 25%;
+  }
+  .ex-table__icon {
+    margin-right: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .ex-table__header {
+    grid-template-columns: 7% 27% 27%  27% 12%;
+    grid-template-areas: "grid-header grid-header grid-header grid-header grid-header";
+  }
+  .ex-table__body-row {
+    grid-template-columns: 7% 27% 27%  27% 12%;
+    grid-template-areas: "grid-body-cell grid-body-cell grid-body-cell grid-body-cell grid-body-cell ";
+  }
+  .ex-table__header-price {
+    justify-self: start;
+    padding-left: 20px;
+  }
+  .ex-table__header-percent,
+  .ex-table__body-percent {
+    padding-right: 20px;
+  }
+  .ex-table__header-reserved,
+  .ex-table__header-search,
+  .ex-table__body-reserved,
+  .ex-table__body-search {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .table-header__hidden-sm,
+  .table-body__hidden-sm {
+    display: none;
+  }
+  .table-header__visible-sm,
+  .table-body__visible-sm {
+    display: inline-block;
+  }
+  .ex-table__header {
+    grid-template-columns: 6% 47% 47%;
+    grid-template-areas: "grid-header grid-header grid-header";
+  }
+  .ex-table__body-row {
+    grid-template-columns: 6% 47% 47%;
+    grid-template-areas: "grid-body-cell grid-body-cell grid-body-cell";
+  }
+  .ex-table__header-price {
+    justify-self: start;
+    padding-left: 18px;
+  }
+  .ex-table__header-price .arrow__top,
+  .ex-table__header-price .arrow__bottom {
+    display: none;
+  }
+  .ex-table__header-price,
+  .ex-table__body-price {
+    justify-self: end;
+    padding-right: 20px;
+    padding-left: 0;
+  }
+  .ex-table__body-price {
+    text-align: right;
+  }
+  .ex-table__body-name .table-body__visible-sm {
+    margin-left: 30px;
+  }
+  .ex-table__body-number {
+    align-self: start;
+    margin-top: 8px;
+  }
 }
 .bg-animation {
   position: relative;
