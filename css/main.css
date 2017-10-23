@@ -36,6 +36,7 @@
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
+  min-width: 320px;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -1251,6 +1252,9 @@ body {
 .ui-slider .ui-slider-range {
   background-color: blue;
 }
+.ui-widget-content {
+  background-color: blue;
+}
 .ui-widget.ui-widget-content {
   border: 1px solid #ddd;
   height: 2px;
@@ -1537,9 +1541,28 @@ body {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  position: relative;
 }
-.ex-table__body-row:hover {
+.ex-table__body-row:hover:before {
+  content: "";
+  display: block;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  height: 100%;
+  width: 60%;
   background-color: #deff86;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 11px;
+  z-index: 1;
+}
+.ex-table__body-row:hover .ex-table__body-percent {
+  color: #009715;
+}
+.ex-table__body-cell {
+  z-index: 10;
 }
 .ex-table__header-number,
 .ex-table__header-price {
@@ -1665,6 +1688,10 @@ body {
     grid-template-columns: 7% 27% 27%  27% 12%;
     grid-template-areas: "grid-body-cell grid-body-cell grid-body-cell grid-body-cell grid-body-cell ";
   }
+  .ex-table__body-row:hover:before {
+    width: 100%;
+    left: 0;
+  }
   .ex-table__header-price {
     justify-self: start;
     padding-left: 20px;
@@ -1723,9 +1750,12 @@ body {
   }
 }
 .bg-animation {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 500px;
+  z-index: -1;
+  left: 0;
+  right: 0;
 }
 .floating {
   position: absolute;
@@ -1899,6 +1929,130 @@ body {
   }
   100% {
     -webkit-transform: translateY(0%);
+  }
+}
+.benefits-intro {
+  max-width: 1067px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  margin-top: 160px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: "intro-item intro-item intro-item intro-item";
+  justify-content: center;
+}
+.benefits-intro__item {
+  margin-bottom: 30px;
+}
+.benefits-intro__icon {
+  display: block;
+  background-color: transparent;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.icon-home_feat_1 {
+  color: #49c7ff;
+}
+.icon-home_feat_2 {
+  color: #54d6ac;
+}
+.icon-home_feat_3 {
+  color: #e9ac7a;
+}
+.icon-home_feat_4 {
+  color: #a961e6;
+}
+.benefits-intro__content {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+.container-benefits {
+  max-width: 1250px;
+}
+.benefits {
+  background-color: #fff;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  border-radius: 11px;
+  -webkit-box-shadow: 0px 8px 51px 0px rgba(50, 80, 122, 0.32);
+  box-shadow: 0px 8px 51px 0px rgba(50, 80, 122, 0.32);
+  padding: 5% 7%;
+}
+.benefits__heading {
+  font-size: 38px;
+  color: #2c4c70;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.benefits__subheading {
+  font-size: 17px;
+  color: #7ba1b8;
+  text-align: center;
+  margin-bottom: 55px;
+}
+.benefits-list {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: auto;
+}
+.benefits-list__item {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 45px;
+}
+.benefits-list__icon {
+  display: block;
+  background: -moz-linear-gradient(-75deg, #b1edd7 0%, #e3f8f1 100%);
+  background: -ms-linear-gradient(-75deg, #b1edd7 0%, #e3f8f1 100%);
+  background: linear-gradient(-75deg, #b1edd7 0%, #e3f8f1 100%);
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.benefits-list__item-heading {
+  font-size: 19px;
+  font-weight: bold;
+  color: #3b5c82;
+  display: block;
+}
+.benefits-list__item-content {
+  color: #7ba1b8;
+  font-size: 15px;
+}
+@media (max-width: 768px) {
+  .benefits-intro {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "intro-item intro-item";
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+  .benefits-list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+  }
+}
+@media (max-width: 520px) {
+  .benefits-intro {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "intro-item intro-item";
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+  .benefits-list {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
   }
 }
 #header-modal {

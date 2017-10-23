@@ -1,189 +1,42 @@
-
-.exchange-table {
-  margin-top: 35px;
-  width: 100%;
-  .box-shadow(0px 4px 30px 0px rgba(8, 59, 148, 0.34));
-}
-
-.ex-table__header{
+.benefits-intro{
+  max-width: 1067px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
   display: grid;
-  grid-template-columns: 6% 18% 13% 12% 8% 8% 16% 18%;
-  grid-template-rows: 53px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
   grid-template-areas:
-          "grid-header grid-header grid-header grid-header grid-header grid-header grid-header grid-header";
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  .border-radius(5px 5px 0 0);
-  font-size: 14px;
-  padding-top: 3px;
-
+          "intro-item intro-item intro-item intro-item";
+  justify-content: center;
 }
-
-.ex-table__body{
-  background-color: #fff;
-  color: #232941;
-  font-size: 15px;
-  .border-radius(0 0 5px 5px);
-}
-
-.ex-table__body-row{
-  display: grid;
-  grid-template-columns: 6% 18% 13% 12% 8% 8% 16% 18%;
-  grid-template-rows: 53px;
-  grid-template-areas:
-          "grid-body-cell grid-body-cell grid-body-cell grid-body-cell grid-body-cell  grid-body-cell grid-body-cell grid-body-cell";
-  align-items: center;
-  padding-top: 4px;
-}
-
-.ex-table__header-number,
-.ex-table__header-price{
-  justify-self: center;
-}
-
-.ex-table__header-name{
-  padding-left: 7px;
-}
-
-.ex-table__header-ticker{
-  padding-left: 11px;
-}
-
-.ex-table__header-percent{
-  padding-left: 20px;
-  text-align: right;
-}
-
-.ex-table__header-reserved{
+.benefits-intro__icon{
+  display: block;
+  background-color: transparent;
+  font-size: 20px;
   text-align: center;
-  margin-left: -27px;
 }
 
-.ex-table__header-search{
-  //padding-left: 10px;
-  input{
-    color: #333a59;
-    font-size: 13px;
-    .border-radius(9px);
-    padding: 10px 0 10px 32px;
-    outline: 0;
-    border: none;
-    margin-right: 11px;
-    margin-left: 4px;
-    background: url("@{rootUrl}search-icon.png")no-repeat;
-    background-position: 12px center ;
-    background-size: 13px 13px;
-    background-color: #fff;
-    width: 67%;
-  }
-  a{
-    display: inline-block;
-    background: url("@{rootUrl}btn-close.png")no-repeat center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    .square(11px);
-  }
+.icon-home_feat_1{
+  color: #49c7ff;
 }
 
-.ex-table__body-number{
-  justify-self: center;
+.icon-home_feat_2{
+  color: #54d6ac;
 }
 
-.ex-table__body-name{
-  padding-left: 7px;
+.icon-home_feat_3{
+  color: #e9ac7a;
 }
 
-.ex-table__body-ticker{
-  font-weight: bold;
-  padding-left: 15px;
+.icon-home_feat_4{
+  color: #a961e6;
 }
 
-.ex-table__body-price{
-  padding-left: 18px;
-}
-
-.ex-table__body-percent{
-  justify-self: end;
-  color: #a53706;
-  margin-left: -9px;
-}
-
-.ex-table__body-reserved{
+.benefits-intro__content{
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  display: block;
   text-align: center;
-  margin-left: 5px;
-}
-
-.ex-table__body-search{
-  text-align: center;
-  margin-left: 9px;
-}
-
-.ex-table__icon{
-  margin-right: 26px;
-}
-
-.table-header__visible-sm,
-.table-body__visible-sm{
-  display: none;
-}
-
-
-
-@media (max-width: 1060px){
-  .ex-table__body {
-    font-size: 13px;
-  }
-
-  .ex-table__header {
-    display: grid;
-    grid-template-columns: 5% 17% 12% 14% 6% 6% 14% 25%;
-  }
-
-  .ex-table__body-row {
-    display: grid;
-    grid-template-columns: 5% 17% 12% 14% 6% 6% 14% 25%;
-  }
-
-  .ex-table__icon {
-    margin-right: 14px;
-  }
-}
-
-@media (max-width: 768px) {
-  .table-header__hidden-sm,
-  .table-body__hidden-sm {
-    display: none;
-  }
-
-  .table-header__visible-sm,
-  .table-body__visible-sm {
-    display: inline-block;
-  }
-
-  .ex-table__header {
-    grid-template-columns: 6% 47% 47%;
-    grid-template-areas: "grid-header grid-header grid-header";
-  }
-
-  .ex-table__body-row {
-    grid-template-columns: 6% 47% 47%;
-    grid-template-areas: "grid-body-cell grid-body-cell grid-body-cell";
-  }
-
-  .ex-table__header-price,
-  .ex-table__body-price{
-    justify-self: end;
-    padding-right: 20px;
-  }
-
-  .ex-table__body-price{
-    padding-left: 0;
-    text-align: right;
-  }
-
-  .ex-table__body-name{
-    .table-body__visible-sm{
-      margin-left: 30px;
-    }
-  }
 }

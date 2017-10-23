@@ -35,28 +35,29 @@
   align-items: center;
   padding-top: 4px;
   .transition(0.3s all ease);
+  position: relative;
   &:hover{
-    background-color: #deff86;
-  //  .ex-table__body-cell{
-  //    &:first-of-type{
-  //      background-color: #deff86;
-  //      .border-radius(9px 0 0 9px);
-  //    }
-  //    &:nth-of-type(2){
-  //      background-color: #deff86;
-  //    }
-  //    &:nth-of-type(3){
-  //      background-color: #deff86;
-  //    }
-  //    &:nth-of-type(4){
-  //      background-color: #deff86;
-  //    }
-  //    &:nth-of-type(5){
-  //      background-color: #deff86;
-  //      .border-radius(0 9px 9px 0);
-  //    }
-  //  }
+    &:before {
+      content: "";
+      display: block;
+      .border-radius(9px);
+      height: 100%;
+      width: 60%;
+      background-color: #deff86;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 11px;
+      z-index: 1;
+    }
+    .ex-table__body-percent{
+      color: #009715;
+    }
   }
+}
+
+.ex-table__body-cell{
+  z-index: 10;
 }
 
 .ex-table__header-number,
@@ -205,6 +206,12 @@
   .ex-table__body-row {
     grid-template-columns: 7% 27% 27%  27% 12%;
     grid-template-areas: "grid-body-cell grid-body-cell grid-body-cell grid-body-cell grid-body-cell ";
+    &:hover{
+      &:before {
+        width: 100%;
+        left: 0;
+      }
+    }
   }
 
   .ex-table__header-price{
