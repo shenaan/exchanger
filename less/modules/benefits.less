@@ -60,6 +60,15 @@
   .border-radius(11px);
   .box-shadow( 0px 8px 51px 0px rgba(50, 80, 122, 0.32));
   padding: 5% 7%;
+  text-align: center;
+  .btn-more{
+    text-align: center;
+    text-transform: uppercase;
+    color: #07aeeb;
+    font-size: 12px;
+    font-weight: 500;
+    margin: auto;
+  }
 }
 
 .benefits__heading{
@@ -80,6 +89,7 @@
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
   grid-template-rows: auto;
+  text-align: left;
 }
 
 .benefits-list__item{
@@ -90,12 +100,66 @@
 
 .benefits-list__icon{
   display: block;
-  background: -moz-linear-gradient( -75deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
-  background: -ms-linear-gradient( -75deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
-  background: linear-gradient(-75deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
   .square(50px);
   .border-radius(50%);
   margin-bottom: 20px;
+  position: relative;
+  &:before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    display: block;
+    background: url("@{rootUrl}cloud.png")no-repeat center;
+    -webkit-background-size: 30px 16px;
+    background-size: 30px 16px;
+    filter: invert(100%)
+  }
+}
+
+.bl__icon1{
+  background: -moz-linear-gradient( 180deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
+  background: -webkit-linear-gradient( 180deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
+  background: -ms-linear-gradient( 180deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
+  background: linear-gradient(180deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
+}
+
+.bl__icon2{
+  background: -moz-linear-gradient(180deg, #c7bff1 0%, #e7e3f8 100%);
+  background: -webkit-linear-gradient(180deg, #c7bff1 0%, #e7e3f8 100%);
+  background: -ms-linear-gradient(180deg, #c7bff1 0%, #e7e3f8 100%);
+  background:  linear-gradient(180deg, #c7bff1 0%, #e7e3f8 100%);
+}
+
+.bl__icon3{
+  background: -moz-linear-gradient(180deg, #f5e9b9 0%, #faf5e1 100%);
+  background: -webkit-linear-gradient(180deg, #f5e9b9 0%, #faf5e1 100%);
+  background: -ms-linear-gradient(180deg, #f5e9b9 0%, #faf5e1 100%);
+  background: linear-gradient(180deg, #f5e9b9 0%, #faf5e1 100%);
+}
+
+.bl__icon4{
+  background: -moz-linear-gradient( 180deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
+  background: -webkit-linear-gradient( 180deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
+  background: -ms-linear-gradient( 180deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
+  background: linear-gradient(180deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
+}
+
+.bl__icon5{
+  background: -moz-linear-gradient(180deg, #b8eaf4 0%, #e1f5fa 100%);
+  background: -webkit-linear-gradient(180deg, #b8eaf4 0%, #e1f5fa 100%);
+  background: -ms-linear-gradient(180deg, #b8eaf4 0%, #e1f5fa 100%);
+  background: linear-gradient(180deg, #b8eaf4 0%, #e1f5fa 100%);
+}
+
+
+.bl__icon6{
+  background: -moz-linear-gradient(1805deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
+  background: -webkit-linear-gradient( 180deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
+  background: -ms-linear-gradient( 180deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
+  background: linear-gradient(180deg, rgb(177,237,215) 0%, rgb(227,248,241) 100%);
 }
 
 .benefits-list__item-heading{
