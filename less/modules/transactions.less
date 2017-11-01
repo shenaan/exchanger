@@ -1,6 +1,9 @@
 .container-transactions{
   max-width: 970px;
   margin-top: 70px;
+  .btn-transparent{
+    display: none;
+  }
 }
 
 .transactions__heading{
@@ -44,12 +47,22 @@
   border: 1px solid #e2e2e2;
   .border-radius(11px);
   padding: 15px;
+  position: relative;
 }
 
 .transaction__amount{
   font-size: 18px;
   color: #34424f;
   display: inline-block;
+}
+
+.transaction__currency{
+  display: inline-block;
+  justify-self: end;
+  position: absolute;
+  right:10px;
+  top: 50%;
+  .translate(0,-50%);
 }
 
 .transaction__icon{
@@ -63,7 +76,7 @@
   }
 }
 
-.transaction__currency{
+.transaction__currency-name{
   display: inline-block;
   margin-left: 5px;
   color: #1e4b76;
@@ -108,5 +121,133 @@
     text-decoration: none;
     font-size: 28px;
     color: #333a59;
+  }
+}
+
+
+@media (max-width:920px){
+  .transaction__icon {
+    margin-left: 10px;
+    padding: 3px 6px;
+  }
+
+  .transaction__amount {
+    font-size: 13px;
+  }
+
+  .transaction__currency-name {
+    margin-left: 4px;
+  }
+
+  .transactions-list__rate {
+    font-size: 13px;
+  }
+
+  .transaction-lst__date {
+    font-size: 13px;
+  }
+}
+
+@media (max-width:768px){
+  .transactions-list__row {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .transactions-list__row-col1 {
+    grid-template-columns: 100%;
+  }
+
+  .transaction-list__item {
+    width: 80%;
+  }
+
+  .transaction__icon {
+    margin-left: 20px;
+    padding: 5px 8px;
+  }
+
+  .transaction__amount {
+    font-size: 16px;
+  }
+
+  .transaction__currency{
+    position: absolute;
+    left: 25%;
+  }
+
+  .transaction__currency-name {
+    margin-left: 5px;
+  }
+
+  .transaction-list__item-text {
+   width: 80%;
+   text-align: center;
+    justify-self: start;
+  }
+
+  .transactions-list__row-col2 {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+
+  .transactions-list__rate {
+    font-size: 16px;
+    justify-self: start;
+  }
+
+  .transaction-lst__date {
+    justify-self: start;
+    align-self: start;
+    padding-top: 8px;
+    font-size: 16px;
+  }
+
+  .transactions-list__row-col-3{
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .transaction-list__item {
+    width: 100%;
+  }
+
+  .transaction__currency{
+    position: absolute;
+    left: 40%;
+    right: 10px;
+  }
+
+  .transaction__amount {
+    font-size: 13px;
+  }
+
+  .transactions-list__rate {
+    font-size: 13px;
+    justify-self: end;
+    span{
+      display: block;
+      text-align: right;
+    }
+  }
+
+  .transaction-lst__date {
+    justify-self: end;
+    font-size: 13px;
+    span {
+      display: block;
+      text-align: right;
+    }
+  }
+
+  .container-transactions{
+    .btn-transparent{
+      display: block;
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      background-color: rgba(255,255,255,0.3);
+    }
   }
 }
