@@ -41,6 +41,7 @@ $(document).ready(function () {
 
     $('.give-options').styler();
     $('.receive-options').styler();
+    $('.select__lang').styler();
 
 
     //btn-more
