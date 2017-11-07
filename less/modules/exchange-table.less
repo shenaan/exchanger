@@ -7,7 +7,7 @@
 
 .ex-table__header{
   display: grid;
-  grid-template-columns: 6% 18% 13% 12% 8% 8% 16% 18%;
+  grid-template-columns: 6% 18% 13% 12% 10% 6% 16% 18%;
   grid-template-rows: 53px;
   grid-template-areas:
           "grid-header grid-header grid-header grid-header grid-header grid-header grid-header grid-header";
@@ -28,7 +28,7 @@
 
 .ex-table__body-row{
   display: grid;
-  grid-template-columns: 6% 18% 13% 12% 8% 8% 16% 18%;
+  grid-template-columns: 6% 18% 13% 12% 10% 6% 16% 18%;
   grid-template-rows: 53px;
   grid-template-areas:
           "grid-body-cell grid-body-cell grid-body-cell grid-body-cell grid-body-cell  grid-body-cell grid-body-cell grid-body-cell";
@@ -70,7 +70,7 @@
   .arrow__top{
     position: absolute;
     top: 4px;
-    right: -12px;
+    right: -20px;
     display: inline-block;
     width: 0;
     height: 0;
@@ -80,8 +80,8 @@
   }
   .arrow__bottom{
     position: absolute;
-    bottom: 4px;
-    right: -12px;
+    bottom: 3px;
+    right: -20px;
     display: inline-block;
     width: 0;
     height: 0;
@@ -100,7 +100,7 @@
 }
 
 .ex-table__header-percent{
-  padding-left: 20px;
+  padding-right: 4px;
   text-align: right;
 }
 
@@ -155,7 +155,7 @@
 .ex-table__body-percent{
   justify-self: end;
   color: #a53706;
-  margin-left: -9px;
+  padding-right: 3px;
 }
 
 .ex-table__body-reserved{
@@ -185,11 +185,11 @@
   }
 
   .ex-table__header {
-    grid-template-columns: 5% 17% 12% 14% 6% 6% 14% 25%;
+    grid-template-columns: 5% 17% 12% 14% 6% 6% 14% 26%;
   }
 
   .ex-table__body-row {
-    grid-template-columns: 5% 17% 12% 14% 6% 6% 14% 25%;
+    grid-template-columns: 5% 17% 12% 14% 6% 6% 14% 26%;
   }
 
   .ex-table__icon {

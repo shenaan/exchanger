@@ -1,6 +1,6 @@
 .container-transactions{
   max-width: 970px;
-  margin-top: 70px;
+  padding-top: 57px;
   .btn-transparent{
     display: none;
   }
@@ -11,7 +11,7 @@
   font-size: 28px;
   color: #fff;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 9px;
 }
 
 .transactions__subheading{
@@ -21,16 +21,16 @@
 }
 
 .transactions-list{
-  margin-top: 45px;
+  margin-top: 39px;
 }
 
 .transactions-list__row{
   display: grid;
-  grid-template-columns: 43% 46% 11%;
-  padding: 10px 15px;
-  .border-radius(11px);
+  grid-template-columns: 38% 53% 9%;;
+  padding: 11px 15px;
+  .border-radius(4px);
   background-color: #fff;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   .box-shadow(0px 4px 23px 0px rgba(51, 81, 133, 0.07));
   &:nth-of-type(5){
     opacity: 0.4;
@@ -39,14 +39,17 @@
 
 .transactions-list__row-col1{
   display: grid;
-  grid-template-columns: 47% 6% 47%;
+  grid-template-columns: 45% 8% 44%;;
+  //.transaction-list__item{
+  //  width: 84%;
+  //}
 }
 
 .transaction-list__item{
   display: inline-block;
   border: 1px solid #e2e2e2;
-  .border-radius(11px);
-  padding: 15px;
+  .border-radius(4px);
+  padding: 6px 15px;
   position: relative;
 }
 
@@ -60,16 +63,16 @@
   display: inline-block;
   justify-self: end;
   position: absolute;
-  right:10px;
+  right: 14px;
   top: 50%;
   .translate(0,-50%);
 }
 
 .transaction__icon{
   display: inline-block;
-  margin-left: 20px;
+  margin-right: -5px;
   background-color: #00e9b4;
-  padding: 5px 8px;
+  padding: 2px 5px;
   .border-radius(4px);
   &:before{
     color: #2428a6;
@@ -95,7 +98,7 @@
 
 .transactions-list__row-col2{
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 44% 56%;
   align-items: center;
 }
 
@@ -109,6 +112,7 @@
   justify-self: center;
   color: #333a59;
   font-size: 14px;
+  padding-left: 51px;
   span {
     font-weight: 300;
   }
@@ -119,8 +123,11 @@
   justify-self: end;
   a{
     text-decoration: none;
-    font-size: 28px;
+    font-size: 36px;
     color: #333a59;
+    margin-top: -16px;
+    display: block;
+    margin-right: 9px;
   }
 }
 
@@ -145,6 +152,7 @@
 
   .transaction-lst__date {
     font-size: 13px;
+    padding-left: 0;
   }
 }
 

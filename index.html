@@ -31,31 +31,31 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="main-container">
+            <div id="header-modal">
+                <ul class="modal__nav-list">
+                    <li class="modal__nav-list-item"><a href="#" class="modal__nav-list-link">Обмен</a></li>
+                    <li class="modal__nav-list-item"><a href="#" class="modal__nav-list-link">Отзывы</a></li>
+                    <li class="modal__nav-list-item"><a href="#" class="modal__nav-list-link">Помощь</a></li>
+                </ul>
+                <div class="modal__login-form">
+                    <a href="#" class="modal__login"><span class="icon-lock"></span> Вход</a>
+                    <a href="#" class="modal__register">Регистрация</a>
+                </div>
 
-        <div id="header-modal">
-           <ul class="modal__nav-list">
-               <li class="modal__nav-list-item"><a href="#" class="modal__nav-list-link">Обмен</a></li>
-               <li class="modal__nav-list-item"><a href="#" class="modal__nav-list-link">Отзывы</a></li>
-               <li class="modal__nav-list-item"><a href="#" class="modal__nav-list-link">Помощь</a></li>
-           </ul>
-            <div class="modal__login-form">
-                <a href="#" class="modal__login"><span class="icon-lock"></span> Вход</a>
-                <a href="#" class="modal__register">Регистрация</a>
-            </div>
-
-            <!--<div class="modal__loggined-form">-->
+                <!--<div class="modal__loggined-form">-->
                 <!--<div class="modal__person-info">-->
-                    <!--<span class="modal__person-img" style="background: url('img/login-ava.png')no-repeat top center">-->
-                        <!--&lt;!&ndash;<img src="img/login-ava.png" alt="">&ndash;&gt;-->
-                    <!--</span>-->
-                    <!--<span class="modal__person-name">Kyrill Grynko</span>-->
+                <!--<span class="modal__person-img" style="background: url('img/login-ava.png')no-repeat top center">-->
+                <!--&lt;!&ndash;<img src="img/login-ava.png" alt="">&ndash;&gt;-->
+                <!--</span>-->
+                <!--<span class="modal__person-name">Kyrill Grynko</span>-->
                 <!--</div>-->
                 <!--<a href="#" class="modal__logout"><span class="logout-icon"></span>Выйти</a>-->
-            <!--</div>-->
-        </div>
+                <!--</div>-->
+            </div>
 
-        <div class="bg__top"> </div>
-        <header id="header">
+            <div class="bg__top"> </div>
+            <header id="header">
 
                 <div class="container-header clearfix">
                     <div class="pull-left">
@@ -80,603 +80,703 @@
                     </a>
                 </div>
             </header>
+        </div>
 
-        <main class="main">
 
-            <div class="exchange container-exchange">
-                <div class="exchange-sliders clearfix">
-                        <div class="exchange-give">
-                            <label for="give-amount">Отдадите:</label>
-                            <input type="text" id="give-amount" value="17599">
-                            <select class="give-options">
-                                <option selected class="select-icon cc-BTC-alt">BTC</option>
-                                <option class="select-icon cc-ZEC">PTC</option>
-                                <option class="select-icon cc-ZEIT">MTC</option>
-                            </select>
-                            <!--<div class="exchange-item"><span></span></div>-->
-                            <!--<div class="exchange-dropout">-->
+            <main class="main">
+                <div class="main-container">
+
+                    <div class="exchange container-exchange">
+                        <div class="exchange-sliders clearfix">
+                            <div class="exchange-give">
+                                <label for="give-amount">Отдадите:</label>
+                                <input type="text" id="give-amount" value="17599">
+                                <select class="give-options">
+                                    <option selected class="select-icon cc-BTC-alt">BTC</option>
+                                    <option class="select-icon cc-ZEC">PTC</option>
+                                    <option class="select-icon cc-ZEIT">MTC</option>
+                                </select>
+                                <!--<div class="exchange-item"><span></span></div>-->
+                                <!--<div class="exchange-dropout">-->
                                 <!--<ul class="dropout__list">-->
-                                    <!--<li class="dropout__item"><span class="dropout__icon cc-BTC-alt">BTC</span></li>-->
-                                    <!--<li class="dropout__item"><span class="dropout__icon cc-ZEC"></span>PTC</li>-->
-                                    <!--<li class="dropout__item"><span class="dropout__icon cc-ZEIT">MTC</span></li>-->
+                                <!--<li class="dropout__item"><span class="dropout__icon cc-BTC-alt">BTC</span></li>-->
+                                <!--<li class="dropout__item"><span class="dropout__icon cc-ZEC"></span>PTC</li>-->
+                                <!--<li class="dropout__item"><span class="dropout__icon cc-ZEIT">MTC</span></li>-->
                                 <!--</ul>-->
-                            <!--</div>-->
-                            <div id="give-slider"></div>
+                                <!--</div>-->
+                                <div id="give-slider"></div>
+                            </div>
+                            <div class="change-currency">
+                                <a href="#" class="change__btn"></a>
+                            </div>
+                            <div class="exchange-receive">
+                                <label for="receive-amount">Получите:</label>
+                                <input type="text" id="receive-amount" value="352">
+                                <select class="receive-options">
+                                    <option class="select-icon cc-BTC-alt">BTC</option>
+                                    <option selected class="select-icon cc-ZEC">PTC</option>
+                                    <option class="select-icon cc-ZEIT">MTC</option>
+                                </select>
+                                <div id="receive-slider"></div>
+                            </div>
+                            <div class="exchange-action">
+                                <a href="#" class="exchange__btn">Exchange!</a>
+                                <span class="exchange-action__comment">Лучший курс гарантирован! <span>?</span></span>
+                            </div>
                         </div>
-                        <div class="change-currency">
-                            <a href="#" class="change__btn"></a>
-                        </div>
-                        <div class="exchange-receive">
-                            <label for="receive-amount">Получите:</label>
-                            <input type="text" id="receive-amount" value="352">
-                            <select class="receive-options">
-                                <option class="select-icon cc-BTC-alt">BTC</option>
-                                <option selected class="select-icon cc-ZEC">PTC</option>
-                                <option class="select-icon cc-ZEIT">MTC</option>
-                            </select>
-                            <div id="receive-slider"></div>
-                        </div>
-                        <div class="exchange-action">
-                            <a href="#" class="exchange__btn">Exchange!</a>
-                            <span class="exchange-action__comment">Лучший курс гарантирован! <span>?</span></span>
+
+                        <div class="exchange-table">
+                            <div class="ex-table__header">
+                                <div class="ex-table__header-number">
+                                    #
+                                </div>
+                                <div class="ex-table__header-name">
+                                    Name
+                                    <span class="table-header__visible-sm"> / Ticker</span>
+                                </div>
+                                <div class="ex-table__header-ticker table-header__hidden-sm">
+                                    Ticker
+                                </div>
+                                <div class="ex-table__header-price">
+                                    <a href="#" class="arrow__top table-header__hidden-sm"></a>
+                                    <a href="#" class="arrow__bottom table-header__hidden-sm"></a>
+                                    Last Price
+                                    <span class="table-header__visible-sm"> / %</span>
+                                </div>
+                                <div class="ex-table__header-percent table-header__hidden-sm">
+                                    %
+                                </div>
+                                <div class="table-header__hidden-sm"></div>
+                                <div class="ex-table__header-reserved table-header__hidden-sm">
+                                    Reserved
+                                </div>
+                                <div class="ex-table__header-search table-header__hidden-sm">
+                                    <input type="search" title="search">
+                                    <a href="#" class="btn__close"> </a>
+                                </div>
+                            </div>
+                            <div class="ex-table__body">
+                                <div class="ex-table__body-row">
+                                    <div class=" ex-table__body-cell ex-table__body-number">
+                                        1
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-name">
+                                        <span class="ex-table__icon cc-BTC-alt"></span> Bitcoin
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm"> BTC</span>
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
+                                        BTC
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-price">
+                                        $ 250.642515
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm"> -10.66</span>
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
+                                        -10.66
+                                    </div>
+                                    <div class="table-body__hidden-sm"></div>
+                                    <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                </div>
+
+                                <div class="ex-table__body-row">
+                                    <div class=" ex-table__body-cell ex-table__body-number">
+                                        2
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-name">
+                                        <span class=" ex-table__icon cc-BTCD-alt"></span> BitcoinDark
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm"> BTCD</span>
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
+                                        BTCD
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-price">
+                                        $ 250.642515
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm">  -3.91</span>
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
+                                        -3.91
+                                    </div>
+                                    <div class="table-body__hidden-sm"></div>
+                                    <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                </div>
+
+                                <div class="ex-table__body-row">
+                                    <div class=" ex-table__body-cell ex-table__body-number">
+                                        3
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-name">
+                                        <span class=" ex-table__icon cc-BTS-alt"></span> BitShares
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm"> BTS</span>
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
+                                        BTS
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-price">
+                                        $ 250.642515
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm">  -8.33%</span>
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
+                                        -8.33%
+                                    </div>
+                                    <div class="table-body__hidden-sm"></div>
+                                    <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                </div>
+
+                                <div class="ex-table__body-row">
+                                    <div class=" ex-table__body-cell ex-table__body-number">
+                                        4
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-name">
+                                        <span class=" ex-table__icon cc-BTC-alt"></span> Bitcoin
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm"> VTS</span>
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
+                                        VTS
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-price">
+                                        $ 250.642515
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm">  -10.66</span>
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
+                                        -10.66
+                                    </div>
+                                    <div class="table-body__hidden-sm"></div>
+                                    <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                </div>
+
+                                <div class="ex-table__body-row">
+                                    <div class=" ex-table__body-cell ex-table__body-number">
+                                        5
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-name">
+                                        <span class=" ex-table__icon cc-BTCD-alt"></span> BitcoinDark
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm"> PTS</span>
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
+                                        PTS
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-price">
+                                        $ 250.642515
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm">  -3.91</span>
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
+                                        -3.91
+                                    </div>
+                                    <div class="table-body__hidden-sm"></div>
+                                    <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                </div>
+
+                                <div class="ex-table__body-row">
+                                    <div class=" ex-table__body-cell ex-table__body-number">
+                                        6
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-name">
+                                        <span class=" ex-table__icon cc-BTS-alt"></span> BitShares
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm"> ATS</span>
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
+                                        ATS
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-price">
+                                        $ 250.642515
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm">  -3.91</span>
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
+                                        -3.91
+                                    </div>
+                                    <div class="table-body__hidden-sm"></div>
+                                    <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                </div>
+
+                                <div class="ex-table__body-row">
+                                    <div class=" ex-table__body-cell ex-table__body-number">
+                                        7
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-name">
+                                        <span class=" ex-table__icon cc-BTS-alt"></span> BitCoinDark
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm"> PTS</span>
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
+                                        PTS
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-price">
+                                        $ 250.642515
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm">  -3.91</span>
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
+                                        -3.91
+                                    </div>
+                                    <div class="table-body__hidden-sm"></div>
+                                    <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                </div>
+
+                                <div class="ex-table__body-row">
+                                    <div class=" ex-table__body-cell ex-table__body-number">
+                                        8
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-name">
+                                        <span class=" ex-table__icon cc-BTS-alt"></span> BitShares
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm"> ATS</span>
+                                    </div>
+                                    <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
+                                        ATS
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-price">
+                                        $ 250.642515
+                                        <br class="table-body__visible-sm">
+                                        <span class="table-body__visible-sm">  -3.91</span>
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
+                                        -3.91
+                                    </div>
+                                    <div class="table-body__hidden-sm"></div>
+                                    <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                    <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
+                                        $ 250.642515
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-                <div class="exchange-table">
-                    <div class="ex-table__header">
-                            <div class="ex-table__header-number">
-                                #
-                            </div>
-                            <div class="ex-table__header-name">
-                                Name
-                                <span class="table-header__visible-sm"> / Ticker</span>
-                            </div>
-                            <div class="ex-table__header-ticker table-header__hidden-sm">
-                                Ticker
-                            </div>
-                            <div class="ex-table__header-price">
-                                <a href="#" class="arrow__top table-header__hidden-sm"></a>
-                                <a href="#" class="arrow__bottom table-header__hidden-sm"></a>
-                                Last Price
-                                <span class="table-header__visible-sm"> / %</span>
-                            </div>
-                            <div class="ex-table__header-percent table-header__hidden-sm">
-                                %
-                            </div>
-                            <div class="table-header__hidden-sm"></div>
-                            <div class="ex-table__header-reserved table-header__hidden-sm">
-                                Reserved
-                            </div>
-                            <div class="ex-table__header-search table-header__hidden-sm">
-                                <input type="search" title="search">
-                                <a href="#" class="btn__close"> </a>
-                            </div>
-                        </div>
-                    <div class="ex-table__body">
-                        <div class="ex-table__body-row">
-                                <div class=" ex-table__body-cell ex-table__body-number">
-                                    1
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-name">
-                                    <span class="ex-table__icon cc-BTC-alt"></span> Bitcoin
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm"> BTC</span>
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
-                                    BTC
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-price">
-                                    $ 250.642515
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm"> -10.66</span>
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
-                                    -10.66
-                                </div>
-                                <div class="table-body__hidden-sm"></div>
-                                <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                            </div>
-
-                        <div class="ex-table__body-row">
-                                <div class=" ex-table__body-cell ex-table__body-number">
-                                    2
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-name">
-                                    <span class=" ex-table__icon cc-BTCD-alt"></span> BitcoinDark
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm"> BTCD</span>
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
-                                    BTCD
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-price">
-                                    $ 250.642515
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm">  -3.91</span>
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
-                                    -3.91
-                                </div>
-                                <div class="table-body__hidden-sm"></div>
-                                <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                            </div>
-
-                        <div class="ex-table__body-row">
-                                <div class=" ex-table__body-cell ex-table__body-number">
-                                    3
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-name">
-                                    <span class=" ex-table__icon cc-BTS-alt"></span> BitShares
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm"> BTS</span>
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
-                                    BTS
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-price">
-                                    $ 250.642515
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm">  -8.33%</span>
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
-                                    -8.33%
-                                </div>
-                                <div class="table-body__hidden-sm"></div>
-                                <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                            </div>
-
-                        <div class="ex-table__body-row">
-                                <div class=" ex-table__body-cell ex-table__body-number">
-                                    4
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-name">
-                                    <span class=" ex-table__icon cc-BTC-alt"></span> Bitcoin
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm"> VTS</span>
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
-                                    VTS
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-price">
-                                    $ 250.642515
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm">  -10.66</span>
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
-                                    -10.66
-                                </div>
-                                <div class="table-body__hidden-sm"></div>
-                                <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                            </div>
-
-                        <div class="ex-table__body-row">
-                                <div class=" ex-table__body-cell ex-table__body-number">
-                                    5
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-name">
-                                    <span class=" ex-table__icon cc-BTCD-alt"></span> BitcoinDark
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm"> PTS</span>
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
-                                    PTS
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-price">
-                                    $ 250.642515
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm">  -3.91</span>
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
-                                    -3.91
-                                </div>
-                                <div class="table-body__hidden-sm"></div>
-                                <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                            </div>
-
-                        <div class="ex-table__body-row">
-                                <div class=" ex-table__body-cell ex-table__body-number">
-                                    6
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-name">
-                                    <span class=" ex-table__icon cc-BTS-alt"></span> BitShares
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm"> ATS</span>
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
-                                   ATS
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-price">
-                                    $ 250.642515
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm">  -3.91</span>
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
-                                    -3.91
-                                </div>
-                                <div class="table-body__hidden-sm"></div>
-                                <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                            </div>
-
-                        <div class="ex-table__body-row">
-                                <div class=" ex-table__body-cell ex-table__body-number">
-                                    7
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-name">
-                                    <span class=" ex-table__icon cc-BTS-alt"></span> BitCoinDark
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm"> PTS</span>
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
-                                    PTS
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-price">
-                                    $ 250.642515
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm">  -3.91</span>
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
-                                    -3.91
-                                </div>
-                                <div class="table-body__hidden-sm"></div>
-                                <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                            </div>
-
-                        <div class="ex-table__body-row">
-                                <div class=" ex-table__body-cell ex-table__body-number">
-                                    8
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-name">
-                                    <span class=" ex-table__icon cc-BTS-alt"></span> BitShares
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm"> ATS</span>
-                                </div>
-                                <div class="ex-table__body-cell ex-table__body-ticker table-body__hidden-sm">
-                                   ATS
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-price">
-                                    $ 250.642515
-                                    <br class="table-body__visible-sm">
-                                    <span class="table-body__visible-sm">  -3.91</span>
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-percent table-body__hidden-sm">
-                                    -3.91
-                                </div>
-                                <div class="table-body__hidden-sm"></div>
-                                <div class=" ex-table__body-cell ex-table__body-reserved table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                                <div class=" ex-table__body-cell ex-table__body-search table-body__hidden-sm">
-                                    $ 250.642515
-                                </div>
-                            </div>
+                    <div class="bg-animation">
+                        <span class="floating triangle-small"></span>
+                        <span class="floating hexagon-small1"></span>
+                        <span class="floating hexagon-medium1"></span>
+                        <span class="floating hexagon-medium2"></span>
+                        <span class="floating triangle-medium1"></span>
+                        <span class="floating hexagon-big"><span class="cc-ETH"></span></span>
+                        <span class="floating hexagon-medium4"><span class="cc-ETH"></span></span>
+                        <span class="floating hexagon-medium5"><span class="cc-BTC-alt"></span></span>
+                        <span class="floating hexagon-medium6"><span class="cc-BTC-alt"></span></span>
+                        <span class="floating triangle-small1"><span class="cc-ZEC"></span></span>
                     </div>
-
                 </div>
+                <div class="bg__shape-wrapper">
+                    <div class="bg__bottom"></div>
+
+                    <div class="main-container">
+                        <div class="benefits-intro">
+                            <div class="benefits-intro__item">
+                                <span class="benefits-intro__icon icon-home_feat_1" > </span>
+                                <span class="benefits-intro__content">
+                               Отзывы и Счастье
+                           </span>
+                            </div>
+                            <div class="benefits-intro__item">
+                                <span class="benefits-intro__icon icon-home_feat_2"> </span>
+                                <span class="benefits-intro__content">
+                               Безопасность свыше всего
+                           </span>
+                            </div>
+                            <div class="benefits-intro__item">
+                                <span class="benefits-intro__icon icon-home_feat_3"> </span>
+                                <span class="benefits-intro__content">
+                               Оплата и безопасность
+                           </span>
+                            </div>
+                            <div class="benefits-intro__item">
+                                <span class="benefits-intro__icon icon-home_feat_4"> </span>
+                                <span class="benefits-intro__content">
+                               Лучшая безопасность
+                           </span>
+                            </div>
+                        </div>
+
+                        <div class="benefits container-benefits">
+                            <div class="benefits__heading">Все причины менять у нас</div>
+                            <div class="benefits__subheading">Transfer from one wallet to another within seconds.
+                                <br>It's that simple within seconds. beholdery. It's that simple.
+                            </div>
+                            <div class="benefits-list">
+                                <div class="benefits-list__item">
+                                    <span class="benefits-list__icon bl__icon1"></span>
+                                    <span class="benefits-list__item-heading">Лучшие коеффицианты обмена</span>
+                                    <p class="benefits-list__item-content">Transfer from one wallet to another within seconds.
+                                        It's that simple within seconds. beholderyclamoring beyond.
+                                    </p>
+                                </div>
+                                <div class="benefits-list__item">
+                                    <span class="benefits-list__icon bl__icon2"></span>
+                                    <span class="benefits-list__item-heading">ff7e00</span>
+                                    <p class="benefits-list__item-content">Transfer from one wallet to another within seconds.
+                                        It's that simple within seconds. beholderyclamoring beyond.
+                                    </p>
+                                </div>
+                                <div class="benefits-list__item">
+                                    <span class="benefits-list__icon bl__icon3"></span>
+                                    <span class="benefits-list__item-heading">Коеффицианты обмена</span>
+                                    <p class="benefits-list__item-content">Transfer from one wallet to another within seconds.
+                                        It's that simple within seconds. beholderyclamoring beyond.
+                                    </p>
+                                </div>
+                                <div class="benefits-list__item">
+                                    <span class="benefits-list__icon bl__icon4"></span>
+                                    <span class="benefits-list__item-heading">Гарантия безопасности</span>
+                                    <p class="benefits-list__item-content">Transfer from one wallet
+                                        to another within seconds. It's that simple within seconds.
+                                    </p>
+                                </div>
+                                <div class="benefits-list__item">
+                                    <span class="benefits-list__icon bl__icon5"></span>
+                                    <span class="benefits-list__item-heading">Лучшие коеффицианты обмена</span>
+                                    <p class="benefits-list__item-content">Transfer from one wallet to another within seconds.
+                                        It's that simple within seconds.
+                                    </p>
+                                </div>
+                                <div class="benefits-list__item">
+                                    <span class="benefits-list__icon bl__icon6"></span>
+                                    <span class="benefits-list__item-heading">Гарантия безопасности</span>
+                                    <p class="benefits-list__item-content">Transfer from one wallet to another within seconds.
+                                        It's that simple within seconds.
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-more btn-more__white">БОЛЬШЕ ПРИЧИН БЫТЬ С НАМИ</a>
+                        </div>
+
+                        <div class="transactions container-transactions">
+                            <div class="transactions__heading">Последние транзакции</div>
+                            <div class="transactions__subheading">Transfer from one wallet to another within seconds. It's that simple within seconds.</div>
+                            <div class="transactions-list">
+                                <div class="transactions-list__row">
+                                    <div class="transactions-list__row-col1">
+                                        <div class="transaction-list__item">
+                                            <span class="transaction__amount">17'599</span>
+                                            <div class="transaction__currency">
+                                                <span class="transaction__icon cc-BTC-alt"></span>
+                                                <span class="transaction__currency-name">BTC</span>
+                                            </div>
+                                        </div>
+                                        <span class="transaction-list__item-text">на</span>
+                                        <div class="transaction-list__item">
+                                            <span class="transaction__amount">5423</span>
+                                            <div class="transaction__currency">
+                                                <span class="transaction__icon cc-BTCD-alt"></span>
+                                                <span class="transaction__currency-name">JTC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transactions-list__row-col2">
+                                        <div class="transactions-list__rate">Курс обмена: <span>1.25</span></div>
+                                        <div class="transaction-lst__date">7 Августа 1993, <span>15:25</span></div>
+
+                                    </div>
+                                    <div class="transactions-list__row-col-3">
+                                        <a href="#">...</a>
+                                    </div>
+                                </div>
+                                <div class="transactions-list__row">
+                                    <div class="transactions-list__row-col1">
+                                        <div class="transaction-list__item">
+                                            <span class="transaction__amount">17'599</span>
+                                            <div class="transaction__currency">
+                                                <span class="transaction__icon cc-BTC-alt"></span>
+                                                <span class="transaction__currency-name">BTC</span>
+                                            </div>
+                                        </div>
+                                        <span class="transaction-list__item-text">на</span>
+                                        <div class="transaction-list__item">
+                                            <span class="transaction__amount">5423</span>
+                                            <div class="transaction__currency">
+                                                <span class="transaction__icon cc-BTCD-alt"></span>
+                                                <span class="transaction__currency-name">JTC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transactions-list__row-col2">
+                                        <div class="transactions-list__rate">Курс обмена:<span>1.25</span></div>
+                                        <div class="transaction-lst__date">7 Августа 1993, <span>15:25</span></div>
+
+                                    </div>
+                                    <div class="transactions-list__row-col-3">
+                                        <a href="#">...</a>
+                                    </div>
+                                </div>
+                                <div class="transactions-list__row">
+                                    <div class="transactions-list__row-col1">
+                                        <div class="transaction-list__item">
+                                            <span class="transaction__amount">17'599</span>
+                                            <div class="transaction__currency">
+                                                <span class="transaction__icon cc-BTC-alt"></span>
+                                                <span class="transaction__currency-name">BTC</span>
+                                            </div>
+                                        </div>
+                                        <span class="transaction-list__item-text">на</span>
+                                        <div class="transaction-list__item">
+                                            <span class="transaction__amount">5423</span>
+                                            <div class="transaction__currency">
+                                                <span class="transaction__icon cc-BTCD-alt"></span>
+                                                <span class="transaction__currency-name">JTC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transactions-list__row-col2">
+                                        <div class="transactions-list__rate">Курс обмена:<span>1.25</span></div>
+                                        <div class="transaction-lst__date">7 Августа 1993, <span>15:25</span></div>
+
+                                    </div>
+                                    <div class="transactions-list__row-col-3">
+                                        <a href="#">...</a>
+                                    </div>
+                                </div>
+                                <div class="transactions-list__row">
+                                    <div class="transactions-list__row-col1">
+                                        <div class="transaction-list__item">
+                                            <span class="transaction__amount">17'599</span>
+                                            <div class="transaction__currency">
+                                                <span class="transaction__icon cc-BTC-alt"></span>
+                                                <span class="transaction__currency-name">BTC</span>
+                                            </div>
+                                        </div>
+                                        <span class="transaction-list__item-text">на</span>
+                                        <div class="transaction-list__item">
+                                            <span class="transaction__amount">5423</span>
+                                            <div class="transaction__currency">
+                                                <span class="transaction__icon cc-BTCD-alt"></span>
+                                                <span class="transaction__currency-name">JTC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transactions-list__row-col2">
+                                        <div class="transactions-list__rate">Курс обмена: <span>1.25</span></div>
+                                        <div class="transaction-lst__date">7 Августа 1993, <span>15:25</span></div>
+
+                                    </div>
+                                    <div class="transactions-list__row-col-3">
+                                        <a href="#">...</a>
+                                    </div>
+                                </div>
+                                <div class="transactions-list__row">
+                                    <div class="transactions-list__row-col1">
+                                        <div class="transaction-list__item">
+                                            <span class="transaction__amount">17'599</span>
+                                            <div class="transaction__currency">
+                                                <span class="transaction__icon cc-BTC-alt"></span>
+                                                <span class="transaction__currency-name">BTC</span>
+                                            </div>
+                                        </div>
+                                        <span class="transaction-list__item-text">на</span>
+                                        <div class="transaction-list__item">
+                                            <span class="transaction__amount">5423</span>
+                                            <div class="transaction__currency">
+                                                <span class="transaction__icon cc-BTCD-alt"></span>
+                                                <span class="transaction__currency-name">JTC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transactions-list__row-col2">
+                                        <div class="transactions-list__rate">Курс обмена: <span>1.25</span></div>
+                                        <div class="transaction-lst__date">7 Августа 1993, <span>15:25</span></div>
+
+                                    </div>
+                                    <div class="transactions-list__row-col-3">
+                                        <a href="#">...</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-more btn-transparent">Подгрузить еще</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg__color-wrapper">
+                    <div class="main-container">
+
+                        <div class="news container-news">
+                            <div class="news__heading">
+                                <div class="news__heading-icon"></div>
+                                <div class="news__title">Новости компании</div>
+                                <div class="news__subtitle">Transfer from one wallet to another within seconds. It's that simple within seconds.</div>
+                            </div>
+                            <div class="news-slider">
+                                <div class="news-slider__slide">
+                                    <div class="news-slide__title">КРИПТОВАЛЮТА</div>
+                                    <div class="news-slide__heading">
+                                        Лучшие коеффицианты обмена для <br>
+                                        коеффициентов криптовалютных <br>
+                                        обменных траснформаций
+                                    </div>
+                                    <p class="news-slide__content">
+                                        Transfer from one wallet to another within seconds. It's that <br>
+                                        simple within seconds. beholderyclamoring ransfer from one <br>
+                                        wallet to another within seconds.
+                                    </p>
+                                    <a href="#" class="btn btn-more ">Читать новость</a>
+                                </div>
+                                <div class="news-slider__slide">
+                                    <div class="news-slide__title">КРИПТОВАЛЮТА</div>
+                                    <div class="news-slide__heading">
+                                        Лучшие коеффицианты обмена для <br>
+                                        коеффициентов криптовалютных <br>
+                                        обменных траснформаций
+                                    </div>
+                                    <p class="news-slide__content">
+                                        Transfer from one wallet to another within seconds. It's that <br>
+                                        simple within seconds. beholderyclamoring ransfer from one <br>
+                                        wallet to another within seconds.
+                                    </p>
+                                    <a href="#" class="btn btn-more ">Читать новость</a>
+                                </div>
+                                <div class="news-slider__slide">
+                                    <div class="news-slide__title">КРИПТОВАЛЮТА</div>
+                                    <div class="news-slide__heading">
+                                        Лучшие коеффицианты обмена для <br>
+                                        коеффициентов криптовалютных <br>
+                                        обменных траснформаций
+                                    </div>
+                                    <p class="news-slide__content">
+                                        Transfer from one wallet to another within seconds. It's that <br>
+                                        simple within seconds. beholderyclamoring ransfer from one <br>
+                                        wallet to another within seconds.
+                                    </p>
+                                    <a href="#" class="btn btn-more ">Читать новость</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        <div class="bg__color-wrapper">
+            <div class="main-container">
+                <footer class="footer container-footer">
+                    <div class="footer__col-1">
+                        <a class="footer__logo"></a>
+                        <div class="footer__contact">
+                            <a href="tel:04430251533" class="footer__tel"><span class="footer__tel-icon"></span>(044) 3025 1533</a>
+                            <a href="mailto:held@buycrypt.io" class="footer__mail"><span class="footer__mail-icon"></span> help@buycrypt.io</a>
+                            <div class="footer__address">
+                                BuyCrypt Vision Services Vilbevoughly <br>
+                                Finanlcial Strauburg 5 <br>
+                                Cayman Island
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__col-2">
+                        <div class="footer-menu__list-heading">Мы в сетях</div>
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__list-item">
+                                <a href="#" class="footer-menu__list-link">
+                                    <span class="footer-menu__list-icon icon-facebook"></span>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a href="#" class="footer-menu__list-link">
+                                    <span class="footer-menu__list-icon icon-twitter"></span>
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a href="#" class="footer-menu__list-link">
+                                    <span class="footer-menu__list-icon icon-gplus"></span>
+                                    Google
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a href="#" class="footer-menu__list-link">
+                                    <span class="footer-menu__list-icon icon-instagram"></span>
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col-hidden">
+                        <div class="footer__contact">
+                            <a href="tel:04430251533" class="footer__tel"><span class="footer__tel-icon"></span>(044)3025 1533</a>
+                            <a href="mailto:held@buycrypt.io" class="footer__mail"><span class="footer__mail-icon"></span> help@buycrypt.io</a>
+                            <div class="footer__address">
+                                BuyCrypt Vision Services Vilbevoughly <br>
+                                Finanlcial Strauburg 5 <br>
+                                Cayman Island
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__col-3">
+                        <div class="footer-menu__list-heading">Компания</div>
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__list-item">
+                                <a href="#" class="footer-menu__list-link">
+                                    Обмен
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a href="#" class="footer-menu__list-link">
+                                    Помощь
+                                </a>
+                            </li>
+                            <li class="footer-menu__list-item">
+                                <a href="#" class="footer-menu__list-link">
+                                    Вопросы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col-4">
+                        <div class="footer-menu__list-heading">Язык</div>
+                        <select class="select__lang">
+                            <option class="select__lang-icon lang__icon-uar" selected>ЮАР</option>
+                            <option class="select__lang-icon lang__icon-uar">En</option>
+                            <option class="select__lang-icon lang__icon-uar">Ru</option>
+                        </select>
+                    </div>
+
+                </footer>
             </div>
+        </div>
 
-            <div class="bg-animation">
-                    <span class="floating triangle-small"></span>
-                    <span class="floating hexagon-small1"></span>
-                    <span class="floating hexagon-medium1"></span>
-                    <span class="floating hexagon-medium2"></span>
-                    <span class="floating triangle-medium1"></span>
-                    <span class="floating hexagon-big"><span class="cc-ETH"></span></span>
-                    <span class="floating hexagon-medium4"><span class="cc-ETH"></span></span>
-                    <span class="floating hexagon-medium5"><span class="cc-BTC-alt"></span></span>
-                    <span class="floating hexagon-medium6"><span class="cc-BTC-alt"></span></span>
-                    <span class="floating triangle-small1"><span class="cc-ZEC"></span></span>
-                </div>
-
-            <div class="benefits-intro">
-                <div class="benefits-intro__item">
-                   <span class="benefits-intro__icon icon-home_feat_1" > </span>
-                   <span class="benefits-intro__content">
-                       Отзывы и Счастье
-                   </span>
-                </div>
-                <div class="benefits-intro__item">
-                    <span class="benefits-intro__icon icon-home_feat_2"> </span>
-                    <span class="benefits-intro__content">
-                       Безопасность свыше всего
-                   </span>
-                </div>
-                <div class="benefits-intro__item">
-                    <span class="benefits-intro__icon icon-home_feat_3"> </span>
-                    <span class="benefits-intro__content">
-                       Оплата и безопасность
-                   </span>
-                </div>
-                <div class="benefits-intro__item">
-                    <span class="benefits-intro__icon icon-home_feat_4"> </span>
-                    <span class="benefits-intro__content">
-                       Лучшая безопасность
-                   </span>
-                </div>
-            </div>
-
-            <div class="benefits container-benefits">
-                <div class="benefits__heading">Все причины менять у нас</div>
-                <div class="benefits__subheading">Transfer from one wallet to another within seconds.
-                    <br>It's that simple within seconds. beholdery. It's that simple.
-                </div>
-                <div class="benefits-list">
-                    <div class="benefits-list__item">
-                        <span class="benefits-list__icon bl__icon1"></span>
-                        <span class="benefits-list__item-heading">Лучшие коеффицианты обмена</span>
-                        <p class="benefits-list__item-content">Transfer from one wallet to another within seconds.
-                            It's that simple within seconds. beholderyclamoring beyond.
-                        </p>
-                    </div>
-                    <div class="benefits-list__item">
-                        <span class="benefits-list__icon bl__icon2"></span>
-                        <span class="benefits-list__item-heading">ff7e00</span>
-                        <p class="benefits-list__item-content">Transfer from one wallet to another within seconds.
-                            It's that simple within seconds. beholderyclamoring beyond.
-                        </p>
-                    </div>
-                    <div class="benefits-list__item">
-                        <span class="benefits-list__icon bl__icon3"></span>
-                        <span class="benefits-list__item-heading">Коеффицианты обмена</span>
-                        <p class="benefits-list__item-content">Transfer from one wallet to another within seconds.
-                            It's that simple within seconds. beholderyclamoring beyond.
-                        </p>
-                    </div>
-                    <div class="benefits-list__item">
-                        <span class="benefits-list__icon bl__icon4"></span>
-                        <span class="benefits-list__item-heading">Гарантия безопасности</span>
-                        <p class="benefits-list__item-content">Transfer from one wallet
-                            to another within seconds. It's that simple within seconds.
-                        </p>
-                    </div>
-                    <div class="benefits-list__item">
-                        <span class="benefits-list__icon bl__icon5"></span>
-                        <span class="benefits-list__item-heading">Лучшие коеффицианты обмена</span>
-                        <p class="benefits-list__item-content">Transfer from one wallet to another within seconds.
-                            It's that simple within seconds.
-                        </p>
-                    </div>
-                    <div class="benefits-list__item">
-                        <span class="benefits-list__icon bl__icon6"></span>
-                        <span class="benefits-list__item-heading">Гарантия безопасности</span>
-                        <p class="benefits-list__item-content">Transfer from one wallet to another within seconds.
-                            It's that simple within seconds.
-                        </p>
-                    </div>
-                </div>
-                <a href="#" class="btn btn-more btn-more__white">БОЛЬШЕ ПРИЧИН БЫТЬ С НАМИ</a>
-            </div>
-
-            <div class="transactions container-transactions">
-                <div class="transactions__heading">Последние транзакции</div>
-                <div class="transactions__subheading">Transfer from one wallet to another within seconds. It's that simple within seconds.</div>
-                <div class="transactions-list">
-                    <div class="transactions-list__row">
-                        <div class="transactions-list__row-col1">
-                            <div class="transaction-list__item">
-                                <span class="transaction__amount">17'599</span>
-                                <div class="transaction__currency">
-                                    <span class="transaction__icon cc-BTC-alt"></span>
-                                    <span class="transaction__currency-name">BTC</span>
-                                </div>
-                            </div>
-                            <span class="transaction-list__item-text">на</span>
-                            <div class="transaction-list__item">
-                                <span class="transaction__amount">5423</span>
-                                <div class="transaction__currency">
-                                    <span class="transaction__icon cc-BTCD-alt"></span>
-                                    <span class="transaction__currency-name">JTC</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="transactions-list__row-col2">
-                            <div class="transactions-list__rate">Курс обмена: <span>1.25</span></div>
-                            <div class="transaction-lst__date">7 Августа 1993, <span>15:25</span></div>
-
-                        </div>
-                        <div class="transactions-list__row-col-3">
-                            <a href="#">...</a>
-                        </div>
-                    </div>
-                    <div class="transactions-list__row">
-                        <div class="transactions-list__row-col1">
-                            <div class="transaction-list__item">
-                                <span class="transaction__amount">17'599</span>
-                                <div class="transaction__currency">
-                                    <span class="transaction__icon cc-BTC-alt"></span>
-                                    <span class="transaction__currency-name">BTC</span>
-                                </div>
-                            </div>
-                            <span class="transaction-list__item-text">на</span>
-                            <div class="transaction-list__item">
-                                <span class="transaction__amount">5423</span>
-                                <div class="transaction__currency">
-                                    <span class="transaction__icon cc-BTCD-alt"></span>
-                                    <span class="transaction__currency-name">JTC</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="transactions-list__row-col2">
-                            <div class="transactions-list__rate">Курс обмена:<span>1.25</span></div>
-                            <div class="transaction-lst__date">7 Августа 1993, <span>15:25</span></div>
-
-                        </div>
-                        <div class="transactions-list__row-col-3">
-                            <a href="#">...</a>
-                        </div>
-                    </div>
-                    <div class="transactions-list__row">
-                        <div class="transactions-list__row-col1">
-                            <div class="transaction-list__item">
-                                <span class="transaction__amount">17'599</span>
-                                <div class="transaction__currency">
-                                    <span class="transaction__icon cc-BTC-alt"></span>
-                                    <span class="transaction__currency-name">BTC</span>
-                                </div>
-                            </div>
-                            <span class="transaction-list__item-text">на</span>
-                            <div class="transaction-list__item">
-                                <span class="transaction__amount">5423</span>
-                                <div class="transaction__currency">
-                                    <span class="transaction__icon cc-BTCD-alt"></span>
-                                    <span class="transaction__currency-name">JTC</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="transactions-list__row-col2">
-                            <div class="transactions-list__rate">Курс обмена:<span>1.25</span></div>
-                            <div class="transaction-lst__date">7 Августа 1993, <span>15:25</span></div>
-
-                        </div>
-                        <div class="transactions-list__row-col-3">
-                            <a href="#">...</a>
-                        </div>
-                    </div>
-                    <div class="transactions-list__row">
-                        <div class="transactions-list__row-col1">
-                            <div class="transaction-list__item">
-                                <span class="transaction__amount">17'599</span>
-                                <div class="transaction__currency">
-                                    <span class="transaction__icon cc-BTC-alt"></span>
-                                    <span class="transaction__currency-name">BTC</span>
-                                </div>
-                            </div>
-                            <span class="transaction-list__item-text">на</span>
-                            <div class="transaction-list__item">
-                                <span class="transaction__amount">5423</span>
-                                <div class="transaction__currency">
-                                    <span class="transaction__icon cc-BTCD-alt"></span>
-                                    <span class="transaction__currency-name">JTC</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="transactions-list__row-col2">
-                            <div class="transactions-list__rate">Курс обмена: <span>1.25</span></div>
-                            <div class="transaction-lst__date">7 Августа 1993, <span>15:25</span></div>
-
-                        </div>
-                        <div class="transactions-list__row-col-3">
-                            <a href="#">...</a>
-                        </div>
-                    </div>
-                    <div class="transactions-list__row">
-                        <div class="transactions-list__row-col1">
-                            <div class="transaction-list__item">
-                                <span class="transaction__amount">17'599</span>
-                                <div class="transaction__currency">
-                                    <span class="transaction__icon cc-BTC-alt"></span>
-                                    <span class="transaction__currency-name">BTC</span>
-                                </div>
-                            </div>
-                            <span class="transaction-list__item-text">на</span>
-                            <div class="transaction-list__item">
-                                <span class="transaction__amount">5423</span>
-                                <div class="transaction__currency">
-                                    <span class="transaction__icon cc-BTCD-alt"></span>
-                                    <span class="transaction__currency-name">JTC</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="transactions-list__row-col2">
-                            <div class="transactions-list__rate">Курс обмена: <span>1.25</span></div>
-                            <div class="transaction-lst__date">7 Августа 1993, <span>15:25</span></div>
-
-                        </div>
-                        <div class="transactions-list__row-col-3">
-                            <a href="#">...</a>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="btn btn-more btn-transparent">Подгрузить еще</a>
-            </div>
-
-            <div class="news container-news">
-                <div class="news__heading">
-                    <div class="news__heading-icon"></div>
-                    <div class="news__title">Новости компании</div>
-                    <div class="news__subtitle">Transfer from one wallet to another within seconds. It's that simple within seconds.</div>
-                </div>
-                <div class="news-slider">
-                    <div class="news-slider__slide">
-                        <div class="news-slide__title">КРИПТОВАЛЮТА</div>
-                        <div class="news-slide__heading">
-                            Лучшие коеффицианты обмена для <br>
-                            коеффициентов криптовалютных <br>
-                            обменных траснформаций
-                        </div>
-                        <p class="news-slide__content">
-                            Transfer from one wallet to another within seconds. It's that <br>
-                            simple within seconds. beholderyclamoring ransfer from one <br>
-                            wallet to another within seconds.
-                        </p>
-                        <a href="#" class="btn btn-more btn-transparent">Читать новость</a>
-                    </div>
-                    <div class="news-slider__slide">
-                        <div class="news-slide__title">КРИПТОВАЛЮТА</div>
-                        <div class="news-slide__heading">
-                            Лучшие коеффицианты обмена для <br>
-                            коеффициентов криптовалютных <br>
-                            обменных траснформаций
-                        </div>
-                        <p class="news-slide__content">
-                            Transfer from one wallet to another within seconds. It's that <br>
-                            simple within seconds. beholderyclamoring ransfer from one <br>
-                            wallet to another within seconds.
-                        </p>
-                        <a href="#" class="btn btn-more btn-transparent">Читать новость</a>
-                    </div>
-                    <div class="news-slider__slide">
-                        <div class="news-slide__title">КРИПТОВАЛЮТА</div>
-                        <div class="news-slide__heading">
-                            Лучшие коеффицианты обмена для <br>
-                            коеффициентов криптовалютных <br>
-                            обменных траснформаций
-                        </div>
-                        <p class="news-slide__content">
-                            Transfer from one wallet to another within seconds. It's that <br>
-                            simple within seconds. beholderyclamoring ransfer from one <br>
-                            wallet to another within seconds.
-                        </p>
-                        <a href="#" class="btn btn-more btn-transparent">Читать новость</a>
-                    </div>
-                </div>
-            </div>
-
-        </main>
 
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/jquery-ui.min.js"></script>

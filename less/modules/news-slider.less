@@ -1,18 +1,18 @@
 .container-news{
   max-width: 1250px;
   position: relative;
+  padding-top: 132px;
   //background-color: #0453db;
 }
 
 .news__heading{
   margin-left: 4%;
-  padding-left: 137px;
+  padding-left: 96px;
   position: relative;
-  margin-top: 143px;
 }
 
 .news__heading-icon{
-  margin-left: 4%;
+  margin-left: 0;
   display: inline-block;
   .square(70px);
   .border-radius(50%);
@@ -51,17 +51,18 @@
 .news__subtitle {
   color: #a7d6f3;
   font-size: 19px;
+  margin-top: 3px;
 }
 
 .news-slider{
   width: 82%;
-  margin-left: 8%;
-  margin-top: 70px;
+  margin-left: 57px;
+  margin-top: 66px;
   button{
-    .square(50px);
+    .square(46px);
     .border-radius(50%);
     background-color: #fff;
-    top: -100px;
+    top: -97px;
     &:before{
       content: '';
       display: block;
@@ -82,7 +83,7 @@
     }
   }
   .slick-next{
-    right: 20px;
+    right: -138px;
     &:before{
       background: url("@{rootUrl}slick-next.png") no-repeat center;
       -webkit-background-size: cover;
@@ -91,7 +92,7 @@
   }
 
   .slick-prev{
-    left: 87%;
+    left: 104%;
     &:before{
       background: url("@{rootUrl}slick-prev.png") no-repeat center;
       -webkit-background-size: cover;
@@ -109,7 +110,7 @@
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-    padding: 20px 46px;
+    padding: 13px 43px;
     .border-radius(90px);
     background-color: rgba(255,255,255,0.2);
     .transition(0.3s all ease);
@@ -123,6 +124,7 @@
   font-size: 12px;
   text-transform: uppercase;
   color: #3ffffd;
+  letter-spacing: 4px;
 }
 
 .news-slide__heading{
@@ -134,15 +136,17 @@
 .news-slide__content{
   color: #7ba1b8;
   font-size: 15px;
+  margin-top: 27px;
+  margin-bottom: 25px;
 }
 
 @media (max-width: 1400px) {
   .news-slider{
     .slick-next{
-      right: 0;
+      right: -138px;
     }
     .slick-prev{
-      left: 88%;
+      left: 104%;
       right: 63px;
     }
   }
@@ -168,10 +172,11 @@
 }
 
 @media (max-width: 520px) {
-
+  .container-news{
+    padding-top: 50px;
+  }
   .news__heading{
     padding: 0;
-    margin-top: 50px;
   }
 
   .news__heading-icon{

@@ -314,16 +314,20 @@
   }
 
   .jq-selectbox {
-    padding: 12px 0;
-    margin-left: 3px;
-    &:before{
-      left: 4px;
+    &.give-options,
+    &.receive-options{
+      padding: 12px 0;
+      margin-left: 3px;
+      .jq-selectbox__trigger {
+        right: 4px;
+      }
+      &:before {
+        left: 4px;
+      }
     }
   }
 
-  .jq-selectbox__trigger {
-    right: 4px;
-  }
+
 
   .change-currency {
     vertical-align: middle;
